@@ -1,0 +1,148 @@
+
+import java.util.Scanner;
+
+class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novels, biography {
+
+    public void myaccount() {
+
+        System.out.println("Currently you don't have any books to return");
+    }
+
+    // methods related to books showcase
+
+    public void books_showcase() {
+        System.out.println("It's good to see that you want to explore books");
+        System.out.println("Select 1 for fiction");
+        System.out.println("Select 2 for non-fiction");
+        Scanner scanner = new Scanner(System.in);
+        String fonf = scanner.nextLine();
+        scanner.close();
+        type(fonf);
+
+    }
+
+    public static void type(String fonf) {
+        switch (fonf.toLowerCase()) {
+            case "1":
+                System.out.println(marvel + " " + dcu);
+                break;
+            case "2":
+                System.out.println(nnfbook + " " + bsnbook);
+                break;
+            case "3":
+                System.out.println(nnfbook + " " + bsnbook);
+                break;
+            case "4":
+                System.out.println(nnfbook + " " + bsnbook);
+                break;
+            case "5":
+                System.out.println(nnfbook + " " + bsnbook);
+                break;
+            default:
+                System.out.println("Invalid input");
+                break;
+        }
+    }
+
+    public void new_arrivals() {
+        System.out.println("Program has reached New Arrivals");
+
+    }
+
+    public void return_issue() {
+        System.out.println("Program has reached Return/Issue Book");
+
+    }
+
+    public void news_of_day() {
+        System.out.println("Program has reached News of the Day");
+
+    }
+}
+
+interface fiction {
+    String marvel = "Ironman, Thor, Captain America, Ironman 2, Ironman 3, Spiderman, Ant-man, Captain Marvel";
+    String dcu = "batman, superman, wonderwoman, flash, green lantern";
+}
+
+interface nonfiction {
+    String nnfbook = "nonfiction 1, nonfiction 2, nonfiction 3, nonfiction 4";
+}
+
+interface bsnbooks {
+    String bsnbook = "business 1, business 2, business 3, business 4";
+
+}
+
+interface novels {
+    String novel = "novel1 , novel 2,novel3, novel4, novel5";
+}
+
+interface biography {
+    String biography = "biography1, biography2, biography3, biogrpahy4, biography5";
+
+}
+
+interface science_fantasy {
+    String sci_fan = "science1, science2, science3, science4, science5";
+}
+
+class menu extends myoptions {
+
+    public void showopt() {
+        System.out.println("Choose your desired option to proceed & it is case sensitive\n");
+        System.out.println("1. My Account");
+        System.out.println("2. Books Showcase");
+        System.out.println("3. New Arrivals");
+        System.out.println("4. Return/Issue Book");
+        System.out.println("5. News of the Day");
+        System.out.println("6. Exit");
+    }
+
+    public void actionahead(String option) {
+
+        switch (option) {
+            case "1":
+                myaccount();
+                break;
+
+            case "2":
+                books_showcase();
+                break;
+
+            case "3":
+                new_arrivals();
+                break;
+
+            case "4":
+                return_issue();
+                break;
+
+            case "5":
+                news_of_day();
+                break;
+
+            case "6":
+                System.out.println("Exiting...");
+                System.exit(0);
+                break;
+
+            default:
+                System.out.println("Invalid syntax, please enter correct input");
+
+        }
+    }
+
+}
+
+public class mainf {
+    public static void main(String args[]) {
+        System.out.println("Greetings of the Day!");
+        menu showw = new menu();
+        showw.showopt();
+        Scanner scanner = new Scanner(System.in);
+        String option = scanner.nextLine();
+        showw.actionahead(option);
+        scanner.close();
+    }
+}
