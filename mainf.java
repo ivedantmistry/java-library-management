@@ -14,6 +14,10 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
         System.out.println("It's good to see that you want to explore books");
         System.out.println("Select 1 for fiction");
         System.out.println("Select 2 for non-fiction");
+        System.out.println("Select 3 for business books");
+        System.out.println("Select 4 for novels")  
+        System.out.println("Select 5 for biographies")
+        System.out.println("Select 6 for Science Fanstasy")
         Scanner scanner = new Scanner(System.in);
         String fonf = scanner.nextLine();
         scanner.close();
@@ -27,16 +31,19 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
                 System.out.println(marvel + " " + dcu);
                 break;
             case "2":
-                System.out.println(nnfbook + " " + bsnbook);
+                System.out.println(nnfbook);
                 break;
             case "3":
-                System.out.println(nnfbook + " " + bsnbook);
+                System.out.println(bsnbook);
                 break;
             case "4":
-                System.out.println(nnfbook + " " + bsnbook);
+                System.out.println(novel);
                 break;
             case "5":
-                System.out.println(nnfbook + " " + bsnbook);
+                System.out.println(biography);
+                break;
+            case "6":
+                System.out.println(sci_fan);
                 break;
             default:
                 System.out.println("Invalid input");
