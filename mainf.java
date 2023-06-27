@@ -63,8 +63,12 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
     }
 
     public void news_of_day() {
-        System.out.println("Program has reached News of the Day");
-
+        System.out.println("News 1");
+        System.out.println("News 2");
+        System.out.println("News 3");
+        System.out.println("News 4");
+        System.out.println("News 5");
+        System.out.println("News 6");
     }
 }
 
