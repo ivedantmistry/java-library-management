@@ -116,7 +116,9 @@ class menu extends myoptions {
     }
 
     public void actionahead(String option) {
+boolean condition = true;
 
+         while (condition) {
         switch (option) {
             case "1":
                 myaccount();
@@ -142,9 +144,18 @@ class menu extends myoptions {
                 System.out.println("Exiting...");
                 System.exit(0);
                 break;
-
+            case "7":
+                // Additional case for returning back to the switch statement
+                condition = false; // Set condition to false to exit the loop
+                break;
             default:
                 System.out.println("Invalid syntax, please enter correct input");
+
+            }
+            System.out.println("Choose your desired option to proceed:");
+        Scanner scanner = new Scanner(System.in);
+        option = scanner.nextLine();
+            
 
         }
     }
