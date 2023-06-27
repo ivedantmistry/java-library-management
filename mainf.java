@@ -51,8 +51,9 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
         }
     }
 
-    public void new_arrivals() {
-        System.out.println("Program has reached New Arrivals");
+   public void new_arrivals() {
+        System.out.println("Here are some new arrivals");
+        System.out.println(newarr);
 
     }
 
