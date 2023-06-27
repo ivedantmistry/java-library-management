@@ -63,9 +63,17 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
     }
 
     public void news_of_day() {
-        System.out.println("Program has reached News of the Day");
-
+        System.out.println("News 1");
+        System.out.println("News 2");
+        System.out.println("News 3");
+        System.out.println("News 4");
+        System.out.println("News 5");
+        System.out.println("News 6");
     }
+}
+
+interface new_arrive {
+    String newarr = "New Arrival1 ,New Arrival2,New arrival3, New Arrival4 ,New Arrival5";
 }
 
 interface fiction {
@@ -108,7 +116,9 @@ class menu extends myoptions {
     }
 
     public void actionahead(String option) {
+boolean condition = true;
 
+         while (condition) {
         switch (option) {
             case "1":
                 myaccount();
@@ -134,9 +144,18 @@ class menu extends myoptions {
                 System.out.println("Exiting...");
                 System.exit(0);
                 break;
-
+            case "7":
+                // Additional case for returning back to the switch statement
+                condition = false; // Set condition to false to exit the loop
+                break;
             default:
                 System.out.println("Invalid syntax, please enter correct input");
+
+            }
+            System.out.println("Choose your desired option to proceed:");
+        Scanner scanner = new Scanner(System.in);
+        option = scanner.nextLine();
+            
 
         }
     }
