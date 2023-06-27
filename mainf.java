@@ -58,8 +58,11 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
     }
 
     public void return_issue() {
-        System.out.println("Program has reached Return/Issue Book");
-
+        System.out.println("How neat!!!! You currently have no books to return!");
+        System.out.println(".......");
+        System.out.println("......");
+        System.out.println("Want to issue any book?");
+        System.out.println("......");
     }
 
     public void news_of_day() {
