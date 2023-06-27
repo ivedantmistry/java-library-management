@@ -72,6 +72,10 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
     }
 }
 
+interface new_arrive {
+    String newarr = "New Arrival1 ,New Arrival2,New arrival3, New Arrival4 ,New Arrival5";
+}
+
 interface fiction {
     String marvel = "Ironman, Thor, Captain America, Ironman 2, Ironman 3, Spiderman, Ant-man, Captain Marvel";
     String dcu = "batman, superman, wonderwoman, flash, green lantern";
