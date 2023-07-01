@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novels, biography {
