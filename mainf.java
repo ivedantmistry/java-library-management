@@ -84,7 +84,7 @@ interface fiction {
 }
 
 interface nonfiction {
-    String nnfbook = "nonfiction 1, nonfiction 2, nonfiction 3, nonfiction 4";
+    String nnfbook = "nonfiction book 1, nonfiction 2, nonfiction 3, nonfiction 4";
 }
 
 interface bsnbooks {
