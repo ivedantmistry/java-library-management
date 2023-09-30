@@ -9,20 +9,7 @@ class myoptions implements fiction, nonfiction, bsnbooks, science_fantasy, novel
 
     // methods related to books showcase
 
-    public void books_showcase() {
-        System.out.println("It's good to see that you want to explore books");
-        System.out.println("Select 1 for fiction");
-        System.out.println("Select 2 for non-fiction");
-        System.out.println("Select 3 for business books");
-        System.out.println("Select 4 for novels");  
-        System.out.println("Select 5 for biographies");
-        System.out.println("Select 6 for Science Fanstasy");
-        Scanner scanner = new Scanner(System.in);
-        String fonf = scanner.nextLine();
-        scanner.close();
-        type(fonf);
-
-    }
+   
 
     public static void type(String fonf) {
         switch (fonf.toLowerCase()) {
